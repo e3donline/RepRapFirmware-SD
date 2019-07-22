@@ -2,7 +2,7 @@
 ; called when tool 3 is freed
 
 ;Purge nozzle
-M98 Ppurge.g
+;M98 Ppurge.g
 
 ;Move In
 G53 G1 X304.5 Y150 F50000
