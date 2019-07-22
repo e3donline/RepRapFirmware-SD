@@ -5,7 +5,7 @@
 M116 P0
 
 ;prime nozzle
-M98 Pprime.g
+;M98 Pprime.g
 
 ;PCF fan on
 M106 P2 S127
