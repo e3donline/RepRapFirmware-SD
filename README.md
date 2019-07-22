@@ -1,4 +1,4 @@
-# RepRapFirmware-SD
+# RepRapFirmware SD
 The standard configuration files for the Motion System &amp; ToolChanger.
 
 Copy onto the Micro SD Card and insert into the Duet2 before power on.
