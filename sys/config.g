@@ -32,8 +32,8 @@ M569 P1 S0 						; Drive 1 Y
 M569 P2 S1 						; Drive 2 Z
 M569 P3 S0 						; Drive 3 E0
 M569 P4 S0 						; Drive 4 E1
-M569 P5 S0 						; Drive 5 E2
-M569 P6 S0 						; Drive 6 E3
+M569 P5 S1 						; Drive 5 E2
+M569 P6 S1 						; Drive 6 E3
 M569 P7 S0 						; Drive 7 COUPLER
 M569 P8 S0 						; Drive 8 UNUSED
 M569 P9 S0 						; Drive 9 UNUSED
