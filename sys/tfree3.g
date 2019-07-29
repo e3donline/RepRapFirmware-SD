@@ -1,6 +1,11 @@
 ; tfree3.g
 ; called when tool 3 is freed
 
+;Drop the bed
+G91
+G1 Z4 F1000
+G90
+
 ;Purge nozzle
 ;M98 Ppurge.g
 
