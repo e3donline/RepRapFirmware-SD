@@ -69,7 +69,7 @@ M305 S"T2" P3 R4700 T100000 B4388			;Set thermistor
 M143 H3 S300 						; Set temperature limit for heater 3 to 300C
 
 M305 S"T3" P4 R4700 T100000 B4388 			; Set thermistor 
-M143 H4 S3000 						; Set temperature limit for heater 4 to 300C
+M143 H4 S300 						; Set temperature limit for heater 4 to 300C
 
 
 ; Tools
