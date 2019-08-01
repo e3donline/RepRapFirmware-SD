@@ -41,7 +41,7 @@ M569 P9 S0 						; Drive 9 UNUSED
 M584 X0 Y1 Z2 C7 E3:4:5:6 				; Apply custom drive mapping
 M208 X-35:328.5 Y-49:243 Z0:300 C0:500 S0 		; Set axis maxima & minima
 M350 E8:8:8:8 C8 I0 					; Configure microstepping without interpolation
-M350 X16 Y16 Z16 I256					; Configure microstepping with interpolation
+M350 X16 Y16 Z16 I1					; Configure microstepping with interpolation
 M92 X100 Y100 Z1600 C100 E417:417:417:417		; Set steps per mm
 M566 X400 Y400 Z8 C2 E2:2:2:2				; Set maximum instantaneous speed changes (mm/min)
 M203 X35000 Y35000 Z1200 C5000 E5000:5000:5000:5000	; Set maximum speeds (mm/min)
