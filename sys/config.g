@@ -100,7 +100,7 @@ M106 P6 S0 						; T2 PCF
 M106 P7 S255 H4 T70					; T3 HE
 M106 P8 S0						; T3 PCF
 
-;M593 F40.5						; cancel ringing at 40.5Hz
+M593 F50						; cancel ringing at 50Hz
 ;M376 H15						; bed compensation taper
 
 ;tool offsets
