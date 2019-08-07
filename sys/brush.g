@@ -1,3 +1,8 @@
+;Drop Bed
+G91
+G1 Z2 F2000
+G90
+
 ;brush in
 G1 X-32.5 Y124 F50000
 G1 X-35.5 Y155 F50000
