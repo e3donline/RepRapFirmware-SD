@@ -11,5 +11,7 @@ https://duet3d.dozuki.com/c/RepRapFirmware
 
 https://duet3d.dozuki.com/Wiki/Gcode
 
+Make sure you have the lastest firmware installed | https://github.com/dc42/RepRapFirmware/releases   
+
 Firmware Version:	2.04RC1 (2019-07-14b1)
 Web Interface Version:	1.22.6
