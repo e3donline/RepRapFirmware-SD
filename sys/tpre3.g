@@ -14,7 +14,7 @@ G1 X304.5 Y200 F50000
 G1 X304.5 Y230 F50000
 
 ;Collect
-G1 X304.5 Y243 F2500
+G1 X304.5 Y242.5 F2500
 
 ;Close Coupler
 M98 P/macros/Coupler - Lock
