@@ -193,13 +193,7 @@
 ;   horizontalSizeCompensation,0
 G90
 M83
-M106 S0
-M140 S60
-M190 S60
-M104 S220 T0
-M109 S220 T0
 G29 S1
-T0
 ; process T0
 ; layer 1, Z = 0.250
 T0
