@@ -6,6 +6,9 @@ G91
 G1 Z4 F1000
 G90
 
+;mesh levelling off
+G29 S2
+
 ;Purge nozzle
 ;M98 Ppurge.g
 
@@ -23,4 +26,3 @@ M106 P8 S0
 
 ;Move Out
 G53 G1 X304.5 Y175 F50000
-
