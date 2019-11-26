@@ -100,7 +100,7 @@ M106 P6 S0 						; T2 PCF
 M106 P7 S255 H4 T70					; T3 HE
 M106 P8 S0						; T3 PCF
 
-M593 F50						; cancel ringing at 50Hz
+M593 F50						; cancel ringing at 50Hz (https://forum.e3d-online.com/threads/accelerometer-and-resonance-measurements-of-the-motion-system.3445/)
 ;M376 H15						; bed compensation taper
 
 ;tool offsets
