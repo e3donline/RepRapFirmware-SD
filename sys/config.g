@@ -9,10 +9,9 @@ M83 							; ...but relative extruder moves
 M555 P2 						; Set firmware compatibility to look like Marlin
 
 ; Network
-M550 P"ToolChanger" 					; Set machine name
-;M587 S"ssid" P"password"				; WiFi Settings
-;M552 S1 P"ssid"					; Enable WiFi Networking
-M552 S1							; Enable Networking
+; Read https://duet3d.dozuki.com/Wiki/Gcode#Section_M587_Add_WiFi_host_network_to_remembered_list_or_list_remembered_networks
+M550 P"ToolChanger" 	; Set machine name
+M552 S1							  ; Enable Networking
 M586 P0 S1 						; Enable HTTP
 M586 P1 S0 						; Disable FTP
 M586 P2 S0 						; Disable Telnet
