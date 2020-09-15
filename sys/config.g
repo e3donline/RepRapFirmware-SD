@@ -55,19 +55,19 @@ M915 C S5 F0 H200 R4700					; Coupler
 M915 X Y S5 F0 H400 R4700				; X / Y Axes
 
 ; Heaters
-M305 P0 T100000 B4138 C0 				; Set thermistor 
+M305 P0 T100000 B4725 C7.06e-8 				; Set thermistor 
 M143 H0 S225 						; Set temperature limit for heater 0 to 225C
 
-M305 S"T0" P1 R4700 T100000 B4388 			; Set thermistor
+M305 S"T0" P1 T100000 B4725 C7.06e-8 			; Set thermistor
 M143 H1 S300 						; Set temperature limit for heater 1 to 300C
 
-M305 S"T1" P2 R4700 T100000 B4388			; Set thermistor
+M305 S"T1" P2 T100000 B4725 C7.06e-8			; Set thermistor
 M143 H2 S300 						; Set temperature limit for heater 2 to 300C
 
-M305 S"T2" P3 R4700 T100000 B4388			;Set thermistor
+M305 S"T2" P3 T100000 B4725 C7.06e-8			;Set thermistor
 M143 H3 S300 						; Set temperature limit for heater 3 to 300C
 
-M305 S"T3" P4 R4700 T100000 B4388 			; Set thermistor 
+M305 S"T3" P4 T100000 B4725 C7.06e-8 			; Set thermistor 
 M143 H4 S300 						; Set temperature limit for heater 4 to 300C
 
 
