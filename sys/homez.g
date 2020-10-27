@@ -1,6 +1,8 @@
 ; homez.g
 ; called to home the Z axis
 
+T-1       ;just in case there is a tool coupled, go try to drop it at the dock
+
 M98 P/macros/Coupler - Unlock	;Open Coupler
 
 G91 				; Relative mode
