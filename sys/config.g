@@ -49,10 +49,10 @@ M906 X2000 Y2000 Z1330 C400 E1680:1680:1680:1680 I30 	; Set motor currents (mA) 
 M84 S120 												; Set idle timeout
 
 ;Stall Detection
-M915 C S5 F0 H200 R4700					; Coupler
+M915 C S5 F0 H200 					; Coupler
 
 ;Stall Detection
-M915 X Y S5 F0 H400 R4700				; X / Y Axes
+M915 X Y S5 F0 H400 				; X / Y Axes
 
 ; Heaters
 M305 P0 T100000 B4725 C7.06e-8 				; Set thermistor 
