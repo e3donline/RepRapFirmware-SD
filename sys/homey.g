@@ -3,12 +3,12 @@
 
 G91 			; use relative positioning
 
-G1 S2 X0.5 Y-0.5 F10000		; energise
+G1 S2 X0.5 Y-0.5 F10000		; energise to avaoid false triggers during sensorless homing
 
 M400 			; make sure everything has stopped before we make changes
-M574 X1 Y1 S3 		; set endstops to use motor stall
+G4 P100			; wait 100ms
 
-M913 X20 Y20 		; drop motor currents to 25%
+M913 X20 Y20 		; drop motor currents to 20%
 M915 H200 X Y S3 R0 F0 	; set X and Y to sensitivity 3, do nothing when stall, unfiltered
 
 
@@ -19,7 +19,7 @@ G1 S2 Z-3 F1200		; lower Z
 G90 			; back to absolute positioning
 
 M400 			; make sure everything has stopped before we reset the motor currents
-G4 P100			; wait 400ms
+G4 P100			; wait 100ms
 M913 X100 Y100 		; motor currents back to 100%
 
 M574 X1 S0 		; Define active low and unused microswitches
