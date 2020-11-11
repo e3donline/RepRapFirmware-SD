@@ -1,6 +1,8 @@
 ; homeall.g
 ; called to home all axes
 
+T-1   ;just in case there is a tool coupled, go and drop it at the dock
+
 M98 Phomec.g			; Home C (ToolHead)
 
 M98 Phomey.g			; Home Y
