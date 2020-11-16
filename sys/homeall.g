@@ -9,4 +9,4 @@ M98 Phomex.g			; Home X
 
 M98 Phomez.g			; Home Z
 
-G1 X150 Y-49 F15000		; Park
+G1 X150 Y-47 F15000		; Park
