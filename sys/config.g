@@ -115,3 +115,5 @@ T-1
 ;M572 D1 S0.2 						; pressure advance T1
 ;M572 D2 S0.2 						; pressure advance T2
 ;M572 D3 S0.2 						; pressure advance T3
+
+M501; load config-override.g
