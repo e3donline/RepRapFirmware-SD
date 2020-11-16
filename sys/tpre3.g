@@ -1,9 +1,6 @@
 ; tpre3.g
 ; called before tool 3 is selected
 
-;Ensure no tool is selected
-;T-1
-
 ;Unlock Coupler
 M98 P/macros/Coupler - Unlock
 
@@ -11,10 +8,10 @@ M98 P/macros/Coupler - Unlock
 G1 X304.5 Y200 F50000
 
 ;Move in
-G1 X304.5 Y230 F50000
+G1 Y230 F50000
 
 ;Collect
-G1 X304.5 Y242.5 F2500
+G1 Y242.5 F2500
 
 ;Close Coupler
 M98 P/macros/Coupler - Lock
@@ -26,5 +23,5 @@ G1 Z10 F1000
 G90
 
 ;Move Out
-G1 X304.5 Y150 F4000
+G1 Y150 F4000
 
