@@ -22,4 +22,3 @@ M400 			; make sure everything has stopped before we reset the motor currents
 G4 P100			; wait 100ms
 M913 X100 Y100 		; motor currents back to 100%
 
-M574 X1 S0 		; Define active low and unused microswitches
