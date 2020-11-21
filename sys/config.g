@@ -72,19 +72,19 @@ M143 H4 S300 						; Set temperature limit for heater 4 to 300C
 
 
 ; Tools
-M563 P0 S"T0" D0 H1 					; Define tool 0
+M563 P0 S"T0" D0 H1 F2 					; Define tool 0
 G10 P0 X0 Y0 Z0 					; Reset tool 0 axis offsets
 G10 P0 R0 S0 						; Reset initial tool 0 active and standby temperatures to 0C
 
-M563 P1 S"T1" D1 H2 					; Define tool 1
+M563 P1 S"T1" D1 H2 F4					; Define tool 1
 G10 P1 X0 Y0 Z0 					; Reset tool 1 axis offsets
 G10 P1 R0 S0 						; Reset initial tool 1 active and standby temperatures to 0C
 
-M563 P2 S"T2" D2 H3 					; Define tool 2
+M563 P2 S"T2" D2 H3 F6					; Define tool 2
 G10 P2 X0 Y0 Z0 					; Reset tool 2 axis offsets
 G10 P2 R0 S0 						; Reset initial tool 2 active and standby temperatures to 0C
 
-M563 P3 S"T3" D3 H4 					; Define tool 3
+M563 P3 S"T3" D3 H4 F8					; Define tool 3
 G10 P3 X0 Y0 Z0 					; Reset tool 3 axis offsets
 G10 P3 R0 S0 						; Reset initial tool 3 active and standby temperatures to 0C
 
