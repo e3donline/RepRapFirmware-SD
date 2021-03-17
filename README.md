@@ -9,4 +9,4 @@ https://duet3d.dozuki.com/c/RepRapFirmware
 
 https://duet3d.dozuki.com/Wiki/Gcode
 
-Make sure you have the lastest firmware installed | https://github.com/dc42/RepRapFirmware/releases   
+https://github.com/dc42/RepRapFirmware/releases   
