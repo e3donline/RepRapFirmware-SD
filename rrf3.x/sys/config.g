@@ -7,6 +7,7 @@ G21 							; Work in millimetres
 G90 							; Send absolute coordinates...
 M83 							; ...but relative extruder moves
 M555 P2 						; Set firmware compatibility to look like Marlin
+M667 S1 						; Select CoreXY mode	
 
 ; Network
 M550 P"ToolChanger" 			; Set machine name
@@ -16,8 +17,6 @@ M552 S1							; Enable Networking
 M586 P0 S1 						; Enable HTTP
 M586 P1 S0 						; Disable FTP
 M586 P2 S0 						; Disable Telnet
-
-M667 S1 						; Select CoreXY mode	
 
 ; Drive direction
 M569 P0 S0 						; Drive 0 X
@@ -32,30 +31,25 @@ M569 P8 S0 						; Drive 8 UNUSED
 M569 P9 S0 						; Drive 9 UNUSED
 
 M584 X0 Y1 Z2 C7 E3:4:5:6 								; Apply custom drive mapping
-M208 X-35:328.5 Y-49:243 Z0:300 C0:500	 				; Set axis maxima & minima
-M92 X100 Y100 Z1600 C200 E834:834:834:834				; Set steps per mm assuming x16 microstepping
+M208 X-35:328.5 Y-49:243 Z0:300 C-45:360	 				; Set axis maxima & minima
+M92 X100 Y100 Z1600 C91.022 E834:834:834:834				; Set steps per mm assuming x16 microstepping
 M350 E16:16:16:16 I1 									; Configure microstepping with interpolation
 M350 C16 I10											; Configure microstepping without interpolation
 M350 X16 Y16 Z16 I1										; Configure microstepping with interpolation
 M566 X400 Y400 Z8 C2 E2:2:2:2							; Set maximum instantaneous speed changes (mm/min)
-M203 X35000 Y35000 Z1200 C10000 E5000:5000:5000:5000	; Set maximum speeds (mm/min)
+M203 X35000 Y35000 Z1200 C5000 E5000:5000:5000:5000	; Set maximum speeds (mm/min)
 M201 X6000 Y6000 Z400 C500 E2500:2500:2500:2500			; Set accelerations (mm/s^2)
-M906 X1800 Y1800 Z1330 C400 I30   						; Idle motion motors to 30%
-M906 E1000:1000:1000:1000 I10     						; Idle extruder motors to 10%
-
+M906 X1800 Y1800 Z1330 I30   						; Idle motion motors to 30%
+M906 E1000:1000:1000:1000 C500 I10     						; Idle extruder motors to 10%
 
 ; Endstops
 M574 X1 Y1 S3 					; Set X / Y endstop stall detection
-M574 Z0 						; No Z endstop
-M574 C1 S3						; Stall detect coupler at low end of its range
+M574 C0 Z0  						; No C Z endstop
 
 ; Z probe
 M558 P8 C"zstop" H3 F360 I0 T20000 	; Set Z probe type to switch, the axes for which it is used and the dive height + speeds
 G31 P200 X0 Y0 Z0	 				; Set Z probe trigger value, offset and trigger height
 M557 X10:290 Y20:180 S40 			; Define mesh grid
-
-;Stall Detection
-M915 C S6 F0 H200 R4700					; Coupler
 
 ;Stall Detection
 M915 X Y S3 F0 H400 R4700				; X / Y Axes
@@ -119,7 +113,7 @@ M106 P6 S0 						; T2 PCF
 M106 P7 S255 H4 T70				; T3 HE
 M106 P8 S0						; T3 PCF
 
-M593 F50						; cancel ringing at 50Hz (https://forum.e3d-online.com/threads/accelerometer-and-resonance-measurements-of-the-motion-system.3445/)
+M593 F42.2						; cancel ringing at 42.2Hz (https://forum.e3d-online.com/threads/accelerometer-and-resonance-measurements-of-the-motion-system.3445/)
 ;M376 H15						; bed compensation taper
 
 ;tool offsets
@@ -133,12 +127,14 @@ G10 P1 X-9 Y39 Z-5					; T1
 G10 P2 X-9 Y39 Z-5					; T2
 G10 P3 X-9 Y39 Z-5					; T3
 
-;deselect tools
-T-1
-
 ;M572 D0 S0.2 						; pressure advance T0
 ;M572 D1 S0.2 						; pressure advance T1
 ;M572 D2 S0.2 						; pressure advance T2
 ;M572 D3 S0.2 						; pressure advance T3
 
-M501; load config-override.g
+M575 P1 S1 B57600				; Enable LCD
+G29 S2							    ; disable mesh
+T-1								      ; deselect tools
+
+M501                    ; load config-override.g
+
