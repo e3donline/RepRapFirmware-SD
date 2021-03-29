@@ -106,7 +106,7 @@ M593 F50						; cancel ringing at 50Hz (https://forum.e3d-online.com/threads/acc
 ; !ESTIMATED! offsets for:
 ; V6-tool: X-9 Y39 Z-5
 ; Volcano-tool: X-9 Y39 Z-13.5
-; Hemera-tool: X-37.5 Y43.5 Z-6
+; Hemera-tool: X20 Y43.5 Z-6
 
 G10 P0 X-9 Y39 Z-5					; T0
 G10 P1 X-9 Y39 Z-5					; T1
