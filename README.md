@@ -5,6 +5,8 @@ Copy onto the Micro SD Card and insert into the Duet2 before power on.
 
 **Edit the config.g file to match your configuratuion.**
 
+Read up on Duet | https://duet3d.dozuki.com/
+
 Study the firmware | https://duet3d.dozuki.com/c/RepRapFirmware
 
 Understand the G-Code | https://duet3d.dozuki.com/Wiki/Gcode
