@@ -2,6 +2,8 @@
 
 G28 Z
 
+G30
+
 G1 S2 Z3 F5000		; lift Z 3mm
 
 G29
